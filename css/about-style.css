@@ -4,6 +4,13 @@
   font-family: sans-serif;
 }
 
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  /*color: #777;*/
+}
+
 /* header section */
 .header-container {
   padding: 15px 0;
@@ -38,25 +45,63 @@
 }
 
 /* photo section */
-.about-img {
-  width: 325px;
-  border: 3px solid black;
-  margin: 0 auto;
-  display: block;
+.bgimg1, .bgimg2, .bgimg3, .bgimg4 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+.bgimg1 {
+  background-image: url("../images/hobbies.jpg");
+}
+
+.bgimg2 {
+  background-image: url("../images/family.jpg");
+}
+
+.bgimg3 {
+  background-image: url("../images/life.jpg");
+}
+
+.bgimg4 {
+  background-image: url("../images/future.jpg");
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  color: white;
+  font-weight: bolder;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  background-color:black;
 }
 
 /* articles section */
-article {
-  text-align: center;
-  margin: 20px;
+.info {
+  color: #777;
+  background-color:white;
+  text-align:center;
+  padding:50px 80px;
 }
 
-article h3 {
-  font-size: 16px;
-}
 
-article p {
-  font-size: 14px;
+.info h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
 }
 
 /* footer section */
@@ -69,7 +114,37 @@ article p {
   margin-top: 15px;
 }
 
-
+/* mobile */
+@media (min-width: 320px) {
+  .main-header {
+    font-size: 30px;
+  }
+  .nav-container {
+    text-align: center;
+    padding: 20px;
+  }
+  .nav-link {
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    margin: 20px;
+  }
+  .nav-link:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .about-header {
+    font-size: 20px;
+    margin: 0 100px 20px 100px;
+  }
+}
 
 /* tablet */
 @media (min-width: 768px) {
@@ -101,32 +176,14 @@ article p {
     font-size: 25px;
     margin: 0 150px 20px 150px;
   }
-  .about-img {
-    width: 500px
-  }
-  article h3 {
-    font-size: 14px;
-  }
-  article p {
-    font-size: 12px;
-    margin: 0 125px 0 125px;
-  }
+  
 }
 
 /* laptop/desktop */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .about-header {
     font-size: 30px;
     margin: 0 400px 20px 400px;
   }
-  .about-img {
-    width: 750px
-  }
-  article h3 {
-    font-size: 16px;
-  }
-  article p {
-    font-size: 14px;
-    margin: 0 350px 0 350px;
-  }
+  
 }
