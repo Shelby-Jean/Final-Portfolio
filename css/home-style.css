@@ -10,7 +10,7 @@
 }
 
 .main-header {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Bangers', cursive;
   text-transform: uppercase;
   text-align: center;
 }
@@ -53,13 +53,8 @@
 
 .card-img {
   width: 200px;
-  border: 3px solid black;
-}
-
-.card-title {
-  text-transform: uppercase;
-  text-align: center;
-  padding: 5px;
+  margin-bottom: 20px;
+  /* border: 3px solid black; */
 }
 
 /* footer section */
