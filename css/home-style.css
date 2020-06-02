@@ -107,7 +107,7 @@
 }
 
 /* laptop/desktop */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .hero-container {
     height: 500px;
     background-position: 0px top;
